@@ -1,0 +1,30 @@
+{
+  "name": "Actor",
+  "plural": "Actors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "dateofbirth": {
+      "type": "date"
+    },
+    "bio": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "movies": {
+      "type": "hasAndBelongsToMany",
+      "model": "Movie"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>loopback-example-relation</title>
+  </head>
+  <body>
+    <h1>loopback-example-relation</h1>
+    <p>
+      <a href="/explorer">API Explorer</a>
+    </p>
+    <h2>API</h2>
+    <ul>
+      <li><a href='/api/movies'>/api/movies</a>
+      <li><a href='/api/movies?filter[fields][name]=true'>/api/movies?filter[fields][name]=true</a>
+      <li><a href='/api/movies/1'>/api/movies/1</a>
+      <li><a href='/api/movies/youngFolks'>/api/movies/youngFolks</a>
+      <li><a href='/api/movies/1/actors'>/api/movies/1/actors</a>
+      <li><a href='/api/movies/1/orders'>/api/movies/1/orders</a>
+      <li><a href='/api/movies?filter[include]=actors'>/api/movies?filter[include]=actors</a>
+      <li><a href='/api/movies?filter[include][actors]=author'>/api/movies?filter[include][actors]=author</a>
+      <li><a href='/api/movies?filter[include][actors]=author&filter[where][age]=21'>/api/movies?filter[include][actors]=author&filter[where][age]=21</a>
+      <li><a href='/api/movies?filter[include][actors]=author&filter[limit]=2'>/api/movies?filter[include][actors]=author&filter[limit]=2</a>
+      <li><a href='/api/movies?filter[include]=actors&filter[include]=orders'>/api/movies?filter[include]=actors&filter[include]=orders</a>
+    </ul>
+  </body>
+</html>
